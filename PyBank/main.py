@@ -38,3 +38,12 @@ with open (budget_data) as csvfile:
     print(int(avg_total))
     print("Total Increase:", int(gr_increase) , str(gr_mn_increase))    
     print("Total Decrease", int(gr_decrease) , str(gr_mn_decrease))  
+
+print_bgt_data = os.path.join ("..", "PyBank", "print_buget_data.txt")
+
+with open(print_bgt_data, 'w') as txt:
+    txt.writerow("Financial Analysis")
+
+
+ 
+    #txtwriter.writerow(['Months', 'Proft/Loss'])
