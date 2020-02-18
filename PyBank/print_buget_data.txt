@@ -1,7 +1,7 @@
 Financial Analysis 
 ------------------------------------ 
 Total Months: 86 
-Total Profit/Losses: 38382578 
-446309.0465116279 
-Total Increase: 1170593 Feb-2012 
-Total Decrease: 0 0 
+Total Profit/Losses: $38382578 
+$446309.0465116279 
+Total Increase: $1170593 Feb-2012 
+Total Decrease: $0 0 
