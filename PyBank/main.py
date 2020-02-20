@@ -2,9 +2,6 @@
 import os
 import csv
 
-#sets the location of the csv file 
-budget_data = os.path.join('..','PyBank','budget_data.csv')
-
 #defined variables, I set all to zero to later declare it as a string if needed. 
 count_of_row = 0
 profit_total = 0
@@ -13,6 +10,9 @@ gr_increase = 0
 gr_decrease = 0 
 gr_mn_increase = 0
 gr_mn_decrease = 0
+#ave_value=[]
+#sets the location of the csv file 
+budget_data = os.path.join('..','PyBank','budget_data.csv')
 #open the csv file 
 with open (budget_data) as csvfile:
 # converts the data into delimited sting, understanding that the comma seperate each data set into each column
@@ -25,7 +25,7 @@ with open (budget_data) as csvfile:
        count_of_row += 1
      #sums the total of profit and loses
        profit_total += int(row[1])
-       avg_total =(profit_total/count_of_row)
+       avg_total =(profit_total/count_of_row)  #- put the months in an array, list the previous row array and the 
 
  #gets greatest increase           
        if int(row[1]) > gr_increase:
@@ -49,7 +49,7 @@ with open (budget_data) as csvfile:
 #print to a text file 
 #create the file and specify the Path of the file 
 bgt_data = os.path.join ("..", "PyBank", "print_buget_data.txt")
-#open the file and set it to write. 
+#open the file and set it to write
 file=open(bgt_data, 'w', encoding ='utf-8')
 #Define what output to print to the TXT file 
 file.write(f"Financial Analysis \n")
