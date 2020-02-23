@@ -3,6 +3,7 @@ import os
 import csv
 
 #defined variables, I set all to zero to later declare it as a string if needed. 
+
 count_of_row = 0
 profit_total = 0
 avg_total = 0
@@ -30,7 +31,7 @@ with open (budget_data) as csvfile:
  #gets greatest increase           
        if int(row[1]) > gr_increase:
         gr_increase = int(row[1])
-        gr_mn_increase= row[0]
+        gr_mn_increase= str(row[0])
 
 #get the greatest decrease, however its not handling the negative numbers. 
     if int(row[1]) < gr_decrease:
